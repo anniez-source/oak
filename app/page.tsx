@@ -292,11 +292,11 @@ export default function HomePage() {
             Proof From Real Users
           </h2>
           <p className="text-lg text-stone-600 text-center mb-16">
-            Across 100+ posts from political commentators, organizers, and newsrooms between December 2025 - January 2026:
+            From hundreds of posts across campaigns, organizers, and political commentators:
           </p>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">45-81%</p>
               <p className="text-stone-500 text-sm">clickthrough rates on automated DMs</p>
@@ -308,10 +308,6 @@ export default function HomePage() {
             <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">10,000+</p>
               <p className="text-stone-500 text-sm">links auto-delivered by one political commentator across 100+ posts</p>
-            </div>
-            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">15-25x</p>
-              <p className="text-stone-500 text-sm">higher conversion than link-in-bio across all content types</p>
             </div>
           </div>
           
