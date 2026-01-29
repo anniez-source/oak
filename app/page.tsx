@@ -258,7 +258,39 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 6: FINAL CTA */}
+      {/* SECTION 6: FAQ */}
+      <section className="py-28 bg-[#1a2e2e]">
+        <div className="max-w-3xl mx-auto px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
+            Common Questions
+          </h2>
+          
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">What if my post goes viral?</h3>
+              <p className="text-[#86EFAC]/70 leading-relaxed">
+                We handle delivery at whatever scale your post reaches. If you get 10,000 comments, we queue them and deliver within Instagram&apos;s rate limits. Everyone gets the link—high volume just means delivery happens over minutes instead of seconds.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Do I need to set up keywords in advance?</h3>
+              <p className="text-[#86EFAC]/70 leading-relaxed">
+                No. Just post with &quot;comment KEYWORD&quot; and your URL in the caption. Amplify detects it automatically. No dashboard setup, no pre-configuring keywords. Every post works independently.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Does this work with scheduling tools?</h3>
+              <p className="text-[#86EFAC]/70 leading-relaxed">
+                Yes. Schedule your posts normally with Later, Buffer, or whatever you use. As long as the caption includes &quot;comment KEYWORD&quot; and a URL, Amplify handles the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7: FINAL CTA */}
       <section className="py-28 bg-[#152424]">
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center bg-gradient-to-r from-[#86EFAC]/10 to-[#86EFAC]/5 rounded-3xl p-16 border border-[#86EFAC]/20">
