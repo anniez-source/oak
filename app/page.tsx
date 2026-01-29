@@ -21,9 +21,9 @@ export default function HomePage() {
           <div className="flex justify-between h-20 items-center">
             <Link href="/" className="flex items-center gap-3">
               <img 
-                src="/oak-logo.svg" 
+                src="/oak-logo.png" 
                 alt="Oak" 
-                className="w-10 h-12"
+                className="w-10 h-10"
               />
               <span className="text-3xl font-bold text-[#86EFAC]" style={{ fontFamily: 'var(--font-plus-jakarta)' }}>Oak</span>
             </Link>
