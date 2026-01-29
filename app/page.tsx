@@ -220,9 +220,19 @@ export default function HomePage() {
       {/* SECTION 5: TRUSTED BY / PROOF FROM REAL CAMPAIGNS */}
       <section className="py-28 bg-white">
         <div className="max-w-5xl mx-auto px-8">
-          <p className="text-sm font-medium text-stone-500 uppercase tracking-wider text-center mb-4">
+          <p className="text-sm font-medium text-stone-500 uppercase tracking-wider text-center mb-8">
             Trusted by organizers & campaigns
           </p>
+          
+          {/* Logo Bar */}
+          <div className="mb-16">
+            <img 
+              src="/trusted-logos.png" 
+              alt="Trusted by Social Currant, Feel Good Action, The Hometown Project, Jolly Good Ginger, Good Influence, Christopher Street Project, George Lee Speaks" 
+              className="w-full max-w-4xl mx-auto opacity-80"
+            />
+          </div>
+          
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
             Proof From Real Campaigns
           </h2>
