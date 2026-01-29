@@ -107,7 +107,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/signup" className="inline-flex items-center gap-3 bg-[#86EFAC] text-[#1a2e2e] px-8 py-4 rounded-2xl text-base font-semibold tracking-wide hover:bg-[#a7f3c9] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-              <span>Try Amplify Free - 90 Days</span>
+              <span>Try Amplify Free</span>
             </Link>
             <Link href="/demo" className="inline-flex items-center gap-3 bg-transparent text-[#86EFAC] px-8 py-4 rounded-2xl text-base font-semibold tracking-wide hover:bg-[#86EFAC]/10 transition-all border-2 border-[#86EFAC]/50">
               <span>Meet With Us</span>
@@ -332,7 +332,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/signup" className="inline-flex items-center gap-3 bg-[#86EFAC] text-[#1a2e2e] px-10 py-5 rounded-2xl text-lg font-semibold tracking-wide hover:bg-[#a7f3c9] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                <span>Try Amplify Free - 90 Days</span>
+                <span>Try Amplify Free</span>
                 <ArrowRight className="w-6 h-6" />
               </Link>
               <Link href="/demo" className="inline-flex items-center gap-3 bg-transparent text-[#86EFAC] px-10 py-5 rounded-2xl text-lg font-semibold tracking-wide hover:bg-[#86EFAC]/10 transition-all border-2 border-[#86EFAC]/50">
