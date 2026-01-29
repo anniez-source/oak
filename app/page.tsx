@@ -348,7 +348,7 @@ export default function HomePage() {
       <footer className="py-16 bg-[#0f1f1f] border-t border-[#86EFAC]/10">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <p className="text-[#86EFAC]/50 text-sm mb-6">
-            Oak is a Public Benefit Corporation based in Portland, Maine. You own your audience relationships. We&apos;re not farming your data—we&apos;re building tools that make it useful to you.
+            Oak is a Public Benefit Corporation based in Portland, Maine. You own your audience relationships and data.
           </p>
           <p className="text-[#86EFAC]/30 text-sm">&copy; {new Date().getFullYear()} Oak. All rights reserved.</p>
         </div>
