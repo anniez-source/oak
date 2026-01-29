@@ -64,7 +64,7 @@ export default function HomePage() {
             Engagement isn&apos;t your problem. Follow-through is.
           </h2>
           <p className="text-lg text-[#86EFAC]/70 text-center mb-16 max-w-3xl mx-auto">
-            Instagram is great at creating moments of attention. It&apos;s terrible at helping people act on them—especially when stakes are high and timing matters.
+            Instagram is great at creating moments of attention. It&apos;s terrible at helping people act on them.
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
