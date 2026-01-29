@@ -125,34 +125,43 @@ export default function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-10">
+            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 flex flex-col">
               <div className="w-14 h-14 bg-[#86EFAC] rounded-full flex items-center justify-center text-[#1a2e2e] text-2xl font-bold mb-6">
                 1
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Enable Touchless Automations</h3>
-              <p className="text-[#86EFAC]/70 leading-relaxed">
+              <h3 className="text-xl font-semibold text-white mb-3">Enable Touchless Automations</h3>
+              <p className="text-[#86EFAC]/70 leading-relaxed mb-6">
                 Connect Instagram and choose a keyword + link. Takes under 5 minutes.
               </p>
+              <div className="mt-auto">
+                <img src="/step1-setup.png" alt="Amplify setup interface" className="rounded-lg w-full" />
+              </div>
             </div>
             
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-10">
+            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 flex flex-col">
               <div className="w-14 h-14 bg-[#86EFAC] rounded-full flex items-center justify-center text-[#1a2e2e] text-2xl font-bold mb-6">
                 2
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Post Like You Always Do</h3>
-              <p className="text-[#86EFAC]/70 leading-relaxed">
+              <h3 className="text-xl font-semibold text-white mb-3">Post Like You Always Do</h3>
+              <p className="text-[#86EFAC]/70 leading-relaxed mb-6">
                 Include a keyword in your caption (&quot;comment DONATE&quot;). No extra setup required.
               </p>
+              <div className="mt-auto">
+                <img src="/step2-post.png" alt="Instagram post with keyword" className="rounded-lg w-full" />
+              </div>
             </div>
             
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-10">
+            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 flex flex-col">
               <div className="w-14 h-14 bg-[#86EFAC] rounded-full flex items-center justify-center text-[#1a2e2e] text-2xl font-bold mb-6">
                 3
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">We Deliver Automatically</h3>
-              <p className="text-[#86EFAC]/70 leading-relaxed">
+              <h3 className="text-xl font-semibold text-white mb-3">We Deliver Automatically</h3>
+              <p className="text-[#86EFAC]/70 leading-relaxed mb-6">
                 Anyone who comments instantly gets the link via DM—while they&apos;re still engaged.
               </p>
+              <div className="mt-auto">
+                <img src="/step3-dm.png" alt="Automated DM delivery" className="rounded-lg w-full" />
+              </div>
             </div>
           </div>
           
@@ -208,37 +217,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 5: PROOF FROM REAL CAMPAIGNS */}
-      <section className="py-28 bg-[#1a2e2e]">
+      {/* SECTION 5: TRUSTED BY / PROOF FROM REAL CAMPAIGNS */}
+      <section className="py-28 bg-white">
         <div className="max-w-5xl mx-auto px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
+          <p className="text-sm font-medium text-stone-500 uppercase tracking-wider text-center mb-4">
+            Trusted by organizers & campaigns
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
             Proof From Real Campaigns
           </h2>
-          <p className="text-lg text-[#86EFAC]/70 text-center mb-16">
+          <p className="text-lg text-stone-600 text-center mb-16">
             What we&apos;re seeing across early users
           </p>
           
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#86EFAC] mb-2">1,400+</p>
-              <p className="text-[#86EFAC]/60 text-sm">commenters reached in one rapid-response moment</p>
+            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">1,400+</p>
+              <p className="text-stone-500 text-sm">commenters reached in one rapid-response moment</p>
             </div>
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#86EFAC] mb-2">81%</p>
-              <p className="text-[#86EFAC]/60 text-sm">clickthrough rate on high-intent actions</p>
+            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">81%</p>
+              <p className="text-stone-500 text-sm">clickthrough rate on high-intent actions</p>
             </div>
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#86EFAC] mb-2">1,000+</p>
-              <p className="text-[#86EFAC]/60 text-sm">links auto-delivered from single viral posts</p>
+            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">1,000+</p>
+              <p className="text-stone-500 text-sm">links auto-delivered from single viral posts</p>
             </div>
-            <div className="bg-[#152424] border border-[#86EFAC]/20 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#86EFAC] mb-2">4-6x</p>
-              <p className="text-[#86EFAC]/60 text-sm">higher conversion vs link-in-bio</p>
+            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">4-6x</p>
+              <p className="text-stone-500 text-sm">higher conversion vs link-in-bio</p>
             </div>
           </div>
           
-          <p className="text-[#86EFAC]/60 text-center max-w-2xl mx-auto">
+          <p className="text-stone-500 text-center max-w-2xl mx-auto">
             Used to move people from Instagram comments into petitions, donations, volunteer signups, and campaign actions—all without manual DM work.
           </p>
         </div>
