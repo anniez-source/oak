@@ -289,31 +289,35 @@ export default function HomePage() {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
-            Proof From Real Campaigns
+            Proof From Real Users
           </h2>
           <p className="text-lg text-stone-600 text-center mb-16">
-            Campaigns, organizers, and political commentators are already using Amplify to turn Instagram engagement into action:
+            Across 100+ posts from political commentators, organizers, and newsrooms between December 2025 - January 2026:
           </p>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">45-81%</p>
+              <p className="text-stone-500 text-sm">clickthrough rates on automated DMs</p>
+            </div>
             <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">1,400+</p>
-              <p className="text-stone-500 text-sm">commenters reached in one rapid-response moment</p>
+              <p className="text-stone-500 text-sm">people reached from a single viral post during rapid-response organizing</p>
             </div>
             <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">81%</p>
-              <p className="text-stone-500 text-sm">clickthrough rate on high-intent actions</p>
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">10,000+</p>
+              <p className="text-stone-500 text-sm">links auto-delivered by one political commentator across 100+ posts</p>
             </div>
             <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">1,000+</p>
-              <p className="text-stone-500 text-sm">links auto-delivered from single viral posts</p>
-            </div>
-            <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">4-6x</p>
-              <p className="text-stone-500 text-sm">higher conversion vs link-in-bio</p>
+              <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">15-25x</p>
+              <p className="text-stone-500 text-sm">higher conversion than link-in-bio across all content types</p>
             </div>
           </div>
+          
+          <p className="text-stone-500 text-center max-w-3xl mx-auto">
+            Used to move people from Instagram into Substack subscriptions, petition signatures, investigative journalism, organizing actions, and long-form analysis—all without manual DM work.
+          </p>
         </div>
       </section>
 
