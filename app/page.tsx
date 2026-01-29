@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowRight, MessageCircle, Users, Clock, UserX, Zap, Target, TrendingUp, BarChart3 } from 'lucide-react';
+import { ArrowRight, MessageCircle, Users, Clock, UserX, Target, TrendingUp, BarChart3 } from 'lucide-react';
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0);
@@ -63,8 +63,8 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
             Engagement isn&apos;t your problem. Follow-through is.
           </h2>
-          <p className="text-lg text-[#86EFAC]/70 text-center mb-16 max-w-2xl mx-auto">
-            Instagram creates moments of attention. It&apos;s terrible at helping people act on them.
+          <p className="text-lg text-[#86EFAC]/70 text-center mb-16 max-w-3xl mx-auto">
+            Instagram is great at creating moments of attention. It&apos;s terrible at helping people act on them—especially when stakes are high and timing matters.
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -129,9 +129,9 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-[#86EFAC] rounded-full flex items-center justify-center text-[#1a2e2e] text-2xl font-bold mb-6">
                 1
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Enable Touchless Automations</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Enable Once</h3>
               <p className="text-[#86EFAC]/70 leading-relaxed mb-6">
-                Connect Instagram and choose a keyword + link. Takes under 5 minutes.
+                Connect your Instagram account and turn on touchless automations. Takes under 5 minutes. Done.
               </p>
               <div className="mt-auto">
                 <img src="/step1-setup.png" alt="Amplify setup interface" className="rounded-lg w-full" />
@@ -142,9 +142,9 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-[#86EFAC] rounded-full flex items-center justify-center text-[#1a2e2e] text-2xl font-bold mb-6">
                 2
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Post Like You Always Do</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Post With Two Things</h3>
               <p className="text-[#86EFAC]/70 leading-relaxed mb-6">
-                Include a keyword in your caption (&quot;comment DONATE&quot;). No extra setup required.
+                Include &quot;comment KEYWORD&quot; and your URL in the caption. That&apos;s it. No dashboard setup, no pre-configuring keywords.
               </p>
               <div className="mt-auto">
                 <img src="/step2-post.png" alt="Instagram post with keyword" className="rounded-lg w-full" />
@@ -155,9 +155,9 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-[#86EFAC] rounded-full flex items-center justify-center text-[#1a2e2e] text-2xl font-bold mb-6">
                 3
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">We Deliver Automatically</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">It Works Automatically</h3>
               <p className="text-[#86EFAC]/70 leading-relaxed mb-6">
-                Anyone who comments instantly gets the link via DM—while they&apos;re still engaged.
+                Amplify detects the keyword and URL in your caption. Anyone who comments the keyword gets the link via DM—instantly, while they&apos;re still engaged. Works on every post, including collabs.
               </p>
               <div className="mt-auto">
                 <img src="/step3-dm.png" alt="Automated DM delivery" className="rounded-lg w-full" />
@@ -165,14 +165,10 @@ export default function HomePage() {
             </div>
           </div>
           
-          {/* Why This Works - Folded in */}
-          <div className="bg-[#86EFAC]/5 border border-[#86EFAC]/20 rounded-2xl p-10 max-w-3xl mx-auto text-center">
-            <Zap className="w-8 h-8 text-[#86EFAC] mx-auto mb-4" />
-            <p className="text-xl text-white font-medium mb-2">
-              Why this converts better than link-in-bio
-            </p>
-            <p className="text-[#86EFAC]/70">
-              The action arrives at the moment of intent. No leaving the post, remembering your profile, or finding the right link later.
+          {/* Why This Works - Explanatory text */}
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-[#86EFAC]/80 leading-relaxed">
+              <span className="text-white font-semibold">Why this works:</span> The action arrives at the moment of intent—and you didn&apos;t have to configure anything. Just post with a keyword and URL. Amplify handles the rest. No leaving the post, no remembering your profile, no finding the right link later.
             </p>
           </div>
         </div>
@@ -201,7 +197,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">You Stop Being the Bottleneck</h3>
               <p className="text-[#86EFAC]/70 leading-relaxed">
-                Your campaign can go viral and you won&apos;t lose people. The infrastructure scales with you.
+                Your campaign can go viral and you won&apos;t lose people. No matter how many posts, no matter what keywords you use—the infrastructure scales with you automatically.
               </p>
             </div>
             <div className="bg-[#1a2e2e] border border-[#86EFAC]/20 rounded-xl p-10">
@@ -221,7 +217,7 @@ export default function HomePage() {
       <section className="py-28 bg-white">
         <div className="max-w-5xl mx-auto px-8">
           <p className="text-sm font-medium text-stone-500 uppercase tracking-wider text-center mb-8">
-            Trusted by organizers & campaigns
+            Currently in use
           </p>
           
           {/* Logo Bar */}
@@ -237,11 +233,11 @@ export default function HomePage() {
             Proof From Real Campaigns
           </h2>
           <p className="text-lg text-stone-600 text-center mb-16">
-            What we&apos;re seeing across early users
+            Campaigns, organizers, and political commentators are already using Amplify to turn Instagram engagement into action:
           </p>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-stone-50 border border-stone-200 rounded-xl p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#1a2e2e] mb-2">1,400+</p>
               <p className="text-stone-500 text-sm">commenters reached in one rapid-response moment</p>
@@ -259,10 +255,6 @@ export default function HomePage() {
               <p className="text-stone-500 text-sm">higher conversion vs link-in-bio</p>
             </div>
           </div>
-          
-          <p className="text-stone-500 text-center max-w-2xl mx-auto">
-            Used to move people from Instagram comments into petitions, donations, volunteer signups, and campaign actions—all without manual DM work.
-          </p>
         </div>
       </section>
 
@@ -293,9 +285,6 @@ export default function HomePage() {
       {/* FOOTER */}
       <footer className="py-16 bg-[#0f1f1f] border-t border-[#86EFAC]/10">
         <div className="max-w-4xl mx-auto px-8 text-center">
-          <p className="text-[#86EFAC]/60 mb-6">
-            Amplify is currently in beta with campaigns, organizers, and mission-driven creators converting Instagram engagement into real-world action.
-          </p>
           <p className="text-[#86EFAC]/50 text-sm mb-6">
             Oak is a Public Benefit Corporation based in Portland, Maine. You own your audience relationships. We&apos;re not farming your data—we&apos;re building tools that make it useful to you.
           </p>
