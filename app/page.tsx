@@ -16,6 +16,10 @@ const faqs = [
   {
     question: "Does this work with scheduling tools?",
     answer: "Yes. Schedule your posts normally with Later, Buffer, or whatever you use. As long as the caption includes \"comment KEYWORD\" and a URL, Amplify handles the rest."
+  },
+  {
+    question: "How is this different from ManyChat?",
+    answer: "ManyChat is built for sales funnels—you pre-configure every keyword and link in a dashboard. Amplify is built for organizing—you just post with a keyword and URL, and it works automatically. No setup per post, no complex flows, no bot feel."
   }
 ];
 
