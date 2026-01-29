@@ -2,7 +2,66 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowRight, MessageCircle, Users, Clock, UserX, Target, TrendingUp, BarChart3 } from 'lucide-react';
+import { ArrowRight, MessageCircle, Users, Clock, UserX, Target, TrendingUp, BarChart3, ChevronDown } from 'lucide-react';
+
+const faqs = [
+  {
+    question: "What if my post goes viral?",
+    answer: "We handle delivery at whatever scale your post reaches. If you get 10,000 comments, we queue them and deliver within Instagram's rate limits. Everyone gets the link—high volume just means delivery happens over minutes instead of seconds."
+  },
+  {
+    question: "Do I need to set up keywords in advance?",
+    answer: "No. Just post with \"comment KEYWORD\" and your URL in the caption. Amplify detects it automatically. No dashboard setup, no pre-configuring keywords. Every post works independently."
+  },
+  {
+    question: "Does this work with scheduling tools?",
+    answer: "Yes. Schedule your posts normally with Later, Buffer, or whatever you use. As long as the caption includes \"comment KEYWORD\" and a URL, Amplify handles the rest."
+  }
+];
+
+function FAQSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <section className="py-28 bg-[#1a2e2e]">
+      <div className="max-w-3xl mx-auto px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
+          Common Questions
+        </h2>
+        
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div 
+              key={index}
+              className="border border-[#86EFAC]/20 rounded-xl overflow-hidden"
+            >
+              <button
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-[#86EFAC]/5 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-white pr-4">{faq.question}</h3>
+                <ChevronDown 
+                  className={`w-5 h-5 text-[#86EFAC] flex-shrink-0 transition-transform duration-200 ${
+                    openIndex === index ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+              <div 
+                className={`overflow-hidden transition-all duration-200 ${
+                  openIndex === index ? 'max-h-96' : 'max-h-0'
+                }`}
+              >
+                <p className="px-6 pb-6 text-[#86EFAC]/70 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0);
@@ -259,36 +318,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 6: FAQ */}
-      <section className="py-28 bg-[#1a2e2e]">
-        <div className="max-w-3xl mx-auto px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 tracking-tight text-center" style={{ fontFamily: 'var(--font-ibm-plex)' }}>
-            Common Questions
-          </h2>
-          
-          <div className="space-y-12">
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">What if my post goes viral?</h3>
-              <p className="text-[#86EFAC]/70 leading-relaxed">
-                We handle delivery at whatever scale your post reaches. If you get 10,000 comments, we queue them and deliver within Instagram&apos;s rate limits. Everyone gets the link—high volume just means delivery happens over minutes instead of seconds.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">Do I need to set up keywords in advance?</h3>
-              <p className="text-[#86EFAC]/70 leading-relaxed">
-                No. Just post with &quot;comment KEYWORD&quot; and your URL in the caption. Amplify detects it automatically. No dashboard setup, no pre-configuring keywords. Every post works independently.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">Does this work with scheduling tools?</h3>
-              <p className="text-[#86EFAC]/70 leading-relaxed">
-                Yes. Schedule your posts normally with Later, Buffer, or whatever you use. As long as the caption includes &quot;comment KEYWORD&quot; and a URL, Amplify handles the rest.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQSection />
 
       {/* SECTION 7: FINAL CTA */}
       <section className="py-28 bg-[#152424]">
